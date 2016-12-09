@@ -1,0 +1,8 @@
+---
+applications:
+- name: predix-java-hello-world
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git # java build pack
+  memory: 256M
+  random-route: true # creates a URL that includes the app name and random words
+  instances: 1 # number of instances
+  path: target/predix-java-hello-world-0.1.0.jar # jar file to be deploy
